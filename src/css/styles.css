@@ -1,3 +1,156 @@
+
 body {
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  position: relative;
+    background: url('../images/window-background.png');
+    background-size: cover;
+}
+canvas {
+  display: inline-block;
+  margin: auto;
+  visibility: hidden;
+}
+
+
+img {
+  margin-left: -999px;
+}
+
+#win-screen {
+  background-image: url('../images/winscreen.png');
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  margin: 0 34vw;
+  background-repeat: no-repeat;
+  background-color: darkblue;
+  visibility: hidden;
+}
+
+
+#start-screen {
+  display: inline-block;
+  background-image: url('../images/start-screen.png');
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-color: lightblue;
+  border: none;
+  text-decoration: none;
+  }
+
+#game-over-screen {
+    background-image: url('../images/dead-frog.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    margin: 0 34vw;
+    background-repeat: no-repeat;
+    background-color: red;
+    visibility: hidden;
+  }
+
+  #start-button {
+    margin-top: 65%;
+    margin-left: 5%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    background-color: orange;
+    border: none;
+  }
+
+  #start-button:hover {
+    background-color: magenta;
+    border: none;
+  }
+
+  #restart-button {
+    margin-top: 80%;
+    margin-left: 65%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    background-color: black;
+    border: none;
+  }
+
+  #restart-button:hover {
+    background-color: darkblue;
+    color: white;
+    border: none;
+  }
+
+.title {
+    font-family: Monofett;
+    font-size: 60px;
+    margin-left: 48%;
+    margin-top: 0
+}
+
+.try-again-note {
+  font-family: Overlock SC;
+  font-size: 45px;
+  position: absolute;
+  left: 55px;
+  bottom: 100px;
+}
+
+#next-level-button {
+    margin-top: 5%;
+    margin-left: 67%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    border: none;
+}
+
+#next-level-button:hover{
+  background-color: magenta;
+  border: none;
+}
+
+#reload-button {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: Overlock SC;
+    font-size: 30px;
+    color: white;
+    border-radius: 10vh;
+    width: 170px;
+    height: 70px;
+    border: none;
+}
+
+#reload-button:hover {
+  background-color: magenta;
+  border: none;
+}
+
+.winNote {
+  font-family: Overlock SC;
+  font-size: 45px;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: white;
 }
