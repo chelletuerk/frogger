@@ -19,6 +19,7 @@ import './images/truck2.png'
 import './images/turtle.png'
 import './images/window-background.png'
 import './images/winscreen.png'
+import './images/background.png'
 
 var CarGenerator = require('./car-generator');
 var LogGenerator = require('./log-generator');
